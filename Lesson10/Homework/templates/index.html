@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru, en">
+<head>
+    <title> Главная страница </title>
+</head>
+<body>
+{% for candidate in candidates_list %}
+    <h1 style="background:#CCFFCC"> Имя кандидата - {{ candidate.name }} </h1>
+    <p> Позиция кандидата - {{ candidate.pk }} </p>
+    <p> Навыки - {{ candidate.skills }} </p>
+{% endfor %}
+</body>
+</html
+>
