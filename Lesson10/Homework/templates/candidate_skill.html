@@ -1,0 +1,12 @@
+<html lang="ru, en">
+<head>
+    <title> {{ title }} </title>
+</head>
+<body>
+{% for candidate in candidate_by_skill %}
+    <h1> Имя кандидата - {{ candidate.name }} </h1>
+    <div> Позиция кандидата - {{ candidate.pk }} </div>
+    <div> Навыки - {{ candidate.skills }} </div>
+{% endfor %}
+</body>
+</html>
