@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ru, en">
+<head>
+    <title> {{ title }} </title>
+</head>
+<body>
+    <img src="{{ candidate_by_pk['picture'] }}">
+    <h1> Имя кандидата - {{ candidate_by_pk['name'] }} </h1>
+    <div> Позиция кандидата - {{ candidate_by_pk['pk'] }} </div>
+    <div> Навыки - {{ candidate_by_pk['skills'] }} </div>
+</body>
+</html>
