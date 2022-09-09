@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru, en">
+<head>
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+    <title> {{ title }} </title>
+</head>
+<body class="mainpage">
+<header class="IDpage">
+    <div>Search "{{ title }}"</div>
+</header>
+<div class="empty"></div>
+<div class="candidate_id">
+    <h1>Found with name {{ title }}: {{ candidate_by_name|length }}</h1>
+    {% for candidate in candidate_by_name %}
+        <div class="text1"><a class="text1" href="/candidate/{{ candidate.id }}">&#9658{{ candidate.name }}</a>
+    {% endfor %}
+    </div>
+    <div class="comeback">
+        <p><a class="comebackphrase" href="/">Main page</a></p>
+    </div>
+    <div class="comeback">
+        <p><a class="comebackphrase1" href="/name/">Name search</a></p>
+    </div>
+    <footer>
+        <div class="empty_1"></div>
+        <div class="empty_low"></div>
+    </footer>
+</body>
+</html>
