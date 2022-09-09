@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+    <title>{{title}}</title>
+</head>
+<body class="mainpage">
+<header class="mainpage">
+    {% block content -%}
+        {%- block mainmenu -%}
+            <ul class="mainmenu">
+                {% for m in menu -%}
+                    <li class="block_top"><a href="{{m.url}}">{{m.name}}</a></li>
+                {% endfor -%}
+            </ul>
+        {%- endblock mainmenu -%}
+</header>
+<div class="empty"></div>
+<div class="content">
+        <div class="h1">
+            <h1 class="title">All candidates</h1>
+        </div>
+        <div class="list">
+             <div>
+                 {% for candidate in candidates_list %}
+                     <p class="text"><a class="text" href="/candidate/{{ candidate.id }}">&#9658{{ candidate.name }}</a>
+                 {% endfor -%}
+             </div>
+        </div>
+{% endblock -%}
+</div>
+<footer>
+<div class="empty_1"></div>
+<div class="empty_low"></div>
+</footer>
+</body>
+</html>
