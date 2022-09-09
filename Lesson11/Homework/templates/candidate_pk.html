@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru, en">
+<head>
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+    <title> {{ title }} </title>
+</head>
+<body class="mainpage">
+<header class="IDpage">
+    <div>{{ get_by_pk['name'] }}</div>
+</header>
+<div class="empty"></div>
+    <div class="candidate_id">
+            <div>{{ get_by_pk['position'] }}</div>
+            <img src="{{ get_by_pk['picture'] }}">
+            <div> id - {{ get_by_pk['id'] }} </div>
+            <div> Skills - {{ get_by_pk['skills'] }}</div>
+    </div>
+<div class="comeback">
+    <p><a class="comebackphrase" href="/">Main page</a></p>
+</div>
+<div class="comeback">
+    <p><a class="comebackphrase1" href="/candidate">ID search</a></p>
+</div>
+<footer>
+    <div class="empty_1"></div>
+    <div class="empty_low"></div>
+</footer>
+</body>
+</html>
