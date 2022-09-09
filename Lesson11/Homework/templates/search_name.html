@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru, en">
+<head>
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+    <title> {{ title }} </title>
+</head>
+<body class="mainpage">
+<header class="IDpage">
+    <div>Name search</div>
+</header>
+<div class="empty"></div>
+<div class="form_search">
+    <form method="post" class="form-contact">
+        <div><input class="input" autocomplete="off" type="text" name="name" placeholder="Enter name"></div>
+        <div><input type="hidden" value="Search"></div>
+    </form>
+</div>
+<div class="comeback">
+    <p><a class="comebackphrase" href="/">Main page</a></p>
+</div>
+<footer>
+    <div class="empty_1"></div>
+    <div class="empty_low"></div>
+</footer>
+</body>
+</html>
