@@ -1,0 +1,151 @@
+div.h1 {
+    margin:0;
+    padding: 73px 5px 5px 135px;
+    font-family: monospace;
+    font-size: 35px;
+    color: #161d27;
+}
+
+p.text {
+    margin: 0;
+    padding: 10px 5px 5px 0px;
+}
+
+a.text {
+    margin: 0;
+    padding: 10px 5px 5px 180px;
+    color: #516071;
+    font-family: monospace;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a.text:hover {
+    color: #9658d5;
+}
+
+h1.title {
+    margin: 0;
+    padding: 0;
+}
+
+div.list {
+    margin: 0;
+    padding: 0;
+}
+
+header.IDpage {
+    display: flex;
+    background: #161d27;
+    margin:0;
+    padding: 28px;
+    font-family: monospace;
+    color: #44eb99;
+    font-size: 15px;
+}
+
+ul.dopmenu {
+    display: flex;
+    background: #ebecf4;
+    margin:0;
+    padding: 16px;
+}
+
+div.empty_low {
+    background-color: #161d27;
+    margin:0;
+    padding: 90px 0 0 0;
+}
+div.empty_1 {
+    background-color: #861be3;
+    margin: 0;
+    padding: 4px 0 0 0;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.form_search {
+    margin: 200px 0 0 0;
+    padding: 0;
+}
+
+form.form-contact {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+input.input {
+    margin: 0;
+    padding: 17px;
+    width: 300px;
+    height: 0;
+    border: 2px solid #44eb99;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+div.comeback {
+    margin: 0;
+    padding: 1px 0 0 0;
+    text-align: center;
+}
+
+a.comebackphrase {
+    margin: 0 0 1px 1px;
+    padding: 8px 15px 8px 15px;
+    background: #44eb99;
+    font-family: monospace;
+    text-decoration: none;
+    color: #161d27;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+a.comebackphrase:hover {
+    color: #861be3;
+}
+
+div.candidate_id {
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+
+a.comebackphrase1 {
+    margin: 0 0 1px 1px;
+    padding: 8px 15px 8px 15px;
+    background: #44eb99;
+    font-family: monospace;
+    text-decoration: none;
+    color: #161d27;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+a.comebackphrase1:hover {
+    color: #861be3;
+}
+
+div.text1 {
+    text-align: center;
+}
+
+a.text1 {
+    text-align: center;
+    font-family: monospace;
+    color: #516071;
+    text-decoration: none;
+}
+
+a.text1:hover {
+    color: #861be3;
+}
